@@ -56,6 +56,8 @@ const MostraCosto=document.getElementById("mostracosto").innerHTML="costo del bi
  console.log(sfondo)
  sfondo.style.border="2px solid black";
  sfondo.style.backgroundColor="#D0D0D0";
+ const sfondoNome=document.querySelector(".flex");
+ sfondoNome.style.backgroundColor="white"
 
  }
  )

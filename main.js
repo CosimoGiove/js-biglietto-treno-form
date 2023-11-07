@@ -13,6 +13,9 @@ let EtaPasseggero =document.getElementById("anni").value
 EtaPasseggero=parseInt(EtaPasseggero);
 console.log("età del passeggero:",EtaPasseggero)
 
+const NomePasseggero = document.getElementById("NomePasseggero").value
+console.log( "il tuo nome: " , NomePasseggero);
+
 //calcolare il prezzo del biglietto in base ai km percorsi dall'utente (prezzo al km 0.21 euro)//
 
 let PrezzoKm= NumeroKm*0.21;
@@ -36,8 +39,42 @@ if (EtaPasseggero < 18){
  else{
     console.log("Prezzo intero", PrezzoKm)
  }
+
+
+const NomeECognome=document.getElementById("nomeecognome").innerHTML="nome e cognome";
+const offerta=document.getElementById("offerta").innerHTML="offerta";
+const BigliettoStandard=document.getElementById("bigliettostandard").innerHTML="Biglietto standard"
+const carrozzaText=document.getElementById("carrozza").innerHTML="carrozza";
+const mostraCodice=document.getElementById("mostracodice").innerHTML="codice"
+const MostraCosto=document.getElementById("mostracosto").innerHTML="costo del biglietto"
+
+ const carrozza= document.getElementById("mostracarrozza").innerHTML=Math.floor(Math.random() * 9) + 1;
+ const codiceTreno= document.getElementById("codice").innerHTML=Math.floor(Math.random() * 10000) + 90001;
+ document.getElementById("mostranome").innerHTML = NomePasseggero
+ document.getElementById("costobiglietto").innerHTML = PrezzoKm.toFixed(2) + "euro"
+ const sfondo=document.getElementById("sfondo")
+ console.log(sfondo)
+ sfondo.style.border="2px solid black";
+ sfondo.style.backgroundColor="#D0D0D0";
+
  }
  )
+// funzione al clik annulla//
+ const Annulla=document.getElementById("annulla")
+ Annulla.addEventListener("click",function(){
+ const form =document.getElementById("form");
+ console.log(form)
+ form.classList.add("remove");
+   
+ })
+
+
+
+
+
+
+
+
 
  
 

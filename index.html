@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto treno form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" name="" id="kmPercorsi" placeholder="km da percorrere">
-    <input type="text" name="" id="anni" placeholder="anni del passeggero">
-    <button id="entrata"> clik me</button>
+    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <form action="">
+        <input type="text" name="" id="NomePasseggero" placeholder="Inserisci il tuo nome e cognome">
+        <h5>Nome e Cognome</h5>
+        <input type="text" name="" id="kmPercorsi" placeholder="km da percorrere">
+        <h5>KM da percorrere</h5>
+        <input type="text" name="" id="anni" placeholder="anni del passeggero">
+        <h5>anni del passeggero</h5>
+    </form>
+    <div>
+        <button id="entrata">Genera</button>
+        <button id="annulla">Annulla</button>
+    </div>
+    
+    <div id="sfondo" class="removesfondo">
+        <h2>il tuo biglietto</h2>
+        <div class="container" id="form">
+            <h3></h3>
+            <div class="flex">
+                <div class="box">
+                    <h4 id="nomeecognome"></h4>
+                  
+                  <div id="mostranome"></div>
+                </div>
+                <div class="box">
+                    <h4 id="offerta"></h4>
+                    <p id="bigliettostandard"></p>
+                </div>
+                <div class="box">
+                    <h4 id="carrozza"></h4>
+                    <div id="mostracarrozza"></div>
+                </div>
+                <div class="box">
+                    <h4 id="mostracodice"></h4>
+                    <div id="codice"></div>
+                </div>
+                <div class="box">
+                    <h4 id="mostracosto"></h4>
+                    <div id="costobiglietto"></div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
 
     <script src="main.js"></script>
 </body>

@@ -64,9 +64,7 @@ const MostraCosto=document.getElementById("mostracosto").innerHTML="costo del bi
 // funzione al clik annulla//
  const Annulla=document.getElementById("annulla")
  Annulla.addEventListener("click",function(){
- const form =document.getElementById("form");
- console.log(form)
- form.classList.add("remove");
+   window.location.reload();
    
  })
 

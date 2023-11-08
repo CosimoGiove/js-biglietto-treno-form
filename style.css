@@ -14,14 +14,12 @@
     width: calc(100% /5);
 }
 
-.remove{
-    display: none;
-}
+
 
 body{
     text-align: center;
     margin-top: 10px;
-    background-image: url(https://www.wallpapertip.com/wmimgs/83-832112_free-travel-wallpaper-mobile-data-src-full-136072.jpg);
+    background-image: url(https://www.italia.it/content/dam/tdh/it/interests/italia/l-italia-vista-a-bordo-di-un-treno-ad-alta-velocita/media/1600X1000_l_italia_vista_a_bordo_di_un_treno_ad_alta_velocita_hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
